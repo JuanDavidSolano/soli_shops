@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Creator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container" id="shopUi">
+      <div class="contenedorTitulo">
+        <button class="close">X</button>
+        <div class="row titleContainer">
+          <h1 class="title">SHOP</h1>
+        </div>
+      </div>
+      <div class="bodyContainer">
+        <div class="buyContainer">
+          <h1 class="label">BUY</h1>
+          <div class="separator"></div>
+          <div class="innerContainer ">
+            <div class="separator"></div>
+            <div class="listContainer visible-scrollbar scrollBar">
+              <ul id="buyList">
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cartContainer">
+          <div class="separatorCart"></div>
+          <div class="innerContainer cart">
+            <div class="externo">
+              <div class="interno">
+                <div class="icono gain">$+</div>
+              </div>
+              <div class="moneyLabelContainer"><h1 class="moneyLabel">999999</h1></div>
+            </div>
+            <div class="separatorCart"></div>
+            <div class="externo">
+              <div class="interno">
+                <div class="icono loss">$-</div>
+              </div>
+              <div class="moneyLabelContainer"><h1 class="moneyLabel">999999</h1></div>
+            </div>
+          </div>
+        </div>
+        <div class="sellContainer">
+          <h1 class="label">SELL</h1>
+          <div class="separator"></div>
+          <div class="innerContainer ">
+            <div class="separator"></div>
+            <div class="listContainer visible-scrollbar scrollBar">
+              <ul id="sellList">
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+                <div class="buyItem"><li>Item</li> <button class="quantityButton btnAdd">+</button><div class="quantity">99999</div><button class="quantityButton btnSubs">-</button></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="credits">
+        <button class="button">BUY</button>
+        <div><label>By Soli for </label><label class="upCity">UpCityRP</label></div>
+        <button class="button">SELL</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b6ec58ae28.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="shop_ui/script.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@
 }
 
 #shopCreatorUi {
-  opacity: 0;
+  /* opacity: 0; */
   transition: 0.5s ease-in-out opacity;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .close:hover {
-  background-color: #8f26267c;
+  background-color: #ca4040;
 }
 
 .container {
@@ -134,7 +134,7 @@ li:hover {
 }
 
 .create:hover {
-  background-color: #268f3980;
+  background-color: #2daa44;
 }
 
 .cancel {
@@ -150,7 +150,7 @@ li:hover {
 }
 
 .cancel:hover {
-  background-color: #8f26267c;
+  background-color: #ca4040;
 }
 
 .buttonContainer {

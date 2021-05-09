@@ -19,5 +19,10 @@ ui_page('html/index.html')
 files {
     'html/index.html',
     'html/script.js',
-    'html/style.css',
+    'html/shop_creator/index.html',
+    'html/shop_creator/style.css',
+    'html/shop_creator/script.js',
+    'html/shop_ui/index.html',
+    'html/shop_ui/style.css',
+    'html/shop_ui/script.js',
 }

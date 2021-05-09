@@ -3,74 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop Creator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Soli Shops</title>
+    <link rel="stylesheet" href="./shop_creator/style.css" />
+    <link rel="stylesheet" href="./shop_ui/style.css" />
   </head>
 
   <body>
-    <div class="container" id="shopCreatorUi">
-      <div class="contenedorTitulo">
-        <button class="close">X</button>
-        <div class="row titleContainer">
-          <h1 class="title">SHOP CREATOR</h1>
-        </div>
-      </div>
-      <div class="bodyContainer">
-        <div class="left">
-          <h1 class="label">Current Shop</h1>
-          <div class="separator"></div>
-          <div class="innerContainer">
-            <input
-              id="searchShopList"
-              type="text"
-              placeholder="Search..."
-              class="searchInput"
-            />
-            <input
-              id="shopName"
-              type="text"
-              placeholder="Shop Name"
-              class=""
-            />
-            <div class="labelsContainer">
-              <h1 class="itemLabel">Item</h1>
-              <h1 class="buyLabel">Buy</h1>
-              <h1 class="sellLabel">Sell</h1>
-              <h1 class="amountLabel">Amount</h1>
-            </div>
-            <div class="listContainer visible-scrollbar scrollBar">
-              <ul id="shopList"></ul>
-            </div>
-          </div>
-          <div class="separator"></div>
-          <div class="row buttonContainer">
-            <button class="create"><h1>CREATE</h1></button>
-            <div class="separator"></div>
-            <button class="cancel"><h1>CANCEL</h1></button>
-          </div>
-        </div>
-        <div class="column right">
-          <h1 class="label">Item Database</h1>
-          <div class="separator"></div>
-          <div class="innerContainer">
-            <input id="searchItemList" type="text" placeholder="Search..." />
-            <div
-              id="listContainer"
-              class="listContainer visible-scrollbar scrollBar"
-            >
-              <ul id="itemList"></ul>
-            </div>
-          </div>
-          <div class="separator"></div>
-          <!-- IF U REMOVE THIS SECTION U WONT BE ALLOWED TO USE THE SCRIPT -->
-          <div class="credits">
-            <label>By Soli for </label><label class="upCity">UpCityRP</label>
-          </div>
-          <!-- IF U REMOVE THIS SECTION U WONT BE ALLOWED TO USE THE SCRIPT -->
-        </div>
-      </div>
-    </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/b6ec58ae28.js"

@@ -7,12 +7,12 @@ CREATE TABLE IF NOT EXISTS `solishopslocations` (
 
 CREATE TABLE IF NOT EXISTS `solishopsinfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `idtienda` int(11) DEFAULT NULL,
+  `idshop` int(11) DEFAULT NULL,
   `iditem` varchar(50) DEFAULT NULL,
   `buyprice` int(11) NOT NULL,
   `sellprice` int(11) NOT NULL,
   `sellamount` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`iditem`) REFERENCES `items`(`name`),
-  FOREIGN KEY (`idtienda`) REFERENCES `solishopslocations`(`id`)
+  FOREIGN KEY (`idshop`) REFERENCES `solishopslocations`(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=163 DEFAULT CHARSET=latin1;

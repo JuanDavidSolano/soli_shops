@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.close {
+  display: block;
+  top: 0;
+  margin-left: auto;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: #8f2626;
+  border-left: 1px solid rgba(210, 210, 210, 0.8);
+  border-bottom: 1px solid rgba(210, 210, 210, 0.8);
+  color: white;
+  transition: 0.4s ease-in-out background-color;
+}
+
+.close:hover {
+  background-color: #ca4040;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  width: 950px;
+  height: 390px;
+  border: 3px solid #81c14b;
+  background-color: #262322;
+  margin-top: 15%;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.visible-scrollbar {
+  display: block;
+  height: 13em;
+  overflow: auto;
+}
+
+li {
+  background-color: #333;
+  color: white;
+  list-style-position: inside;
+  margin-bottom: 2px;
+  padding: 4px 0 4px 10px;
+  list-style-type: none;
+  font-family: "Bebas Neue", cursive;
+  overflow-x: hidden;
+}
+
+li:hover {
+  background-color: #999;
+}
+
+.listContainer {
+  text-align: left;
+  height: 93%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  color: #fbfff1;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Montserrat";
+  color: #fbfff1;
+  height: 20px;
+}
+
+.titleContainer {
+  height: 40px;
+  margin-top: -25px;
+  font-family: "Rubik";
+}
+
+.button {
+  height: 30px;
+  width: 100px;
+  border: none;
+  background-color: #268f3a;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid #176325;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+
+.button:hover {
+  background-color: #2daa44;
+}
+
+.credits {
+  display:flex;
+  justify-content: space-around;
+  font-size: 13px;
+  font-family: "Rubik";
+  font-weight: bold;
+  color: #fbfff1;
+}
+
+.innerContainer {
+  background-color: rgb(161, 161, 161);
+  background-color: #7d7c7a;
+  border-radius: 2px;
+  height: 250px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgb(161, 161, 161);
+}
+
+.scrollBar::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(161, 161, 161);
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #4e7a2a;
+}
+
+.upCity {
+  color: rgba(182, 47, 189, 0.8);
+}
+
+#buyList > .buyItem > li {
+  width: 60%;
+}
+
+#sellList > .buyItem > li {
+  width: 60%;
+}
+
+.buyItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.separator {
+  width: 20px;
+  height: 5px;
+}
+
+.buyContainer{
+  width: 40%
+}
+
+.cartContainer{
+  width: 15%
+}
+
+.sellContainer{
+  width: 40%
+}
+
+/* Quantity buttons + and - */
+.quantityButton {
+  border-radius: 50% ;
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  align-items: center;
+  width:20px;
+  height:20px; 
+  font-size: 15px;
+  outline:none;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btnAdd{
+  background: #268f3a;
+}
+.btnAdd:hover {
+  background: #2daa44;
+}
+
+.btnSubs {
+  background: #8f2626;
+  padding-bottom: 3px;
+}
+
+.btnSubs:hover {
+  background: #ca4040;
+  padding-bottom: 3px;
+}
+
+/* Count Label */
+.quantity {
+  display:flex;
+  justify-content: center;
+  background-color: white;
+  height: 20px;
+  width: 60px;
+  margin-top: 3px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  font-family: "Montserrat";
+}
+
+/* Cart section */
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+}
+
+.externo {
+  display:flex;
+  justify-content: center;
+  background-color: white;
+  height: 50px;
+  width: 160px;
+  border-radius: 50px;
+}
+.interno {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7d7c7a;
+  margin-right: 110px;
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color:white
+}
+
+.gain {
+  background-color:#268f3a;
+}
+
+.loss {
+  background-color:#8f2626;
+}
+
+.separatorCart {
+  width: 20px;
+  height: 25px;
+}
+
+.moneyLabel {
+  font-size: 25px;
+  font-family: "Montserrat";
+  margin-left: 45px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.moneyLabelContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
